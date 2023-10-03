@@ -1,0 +1,18 @@
+<sly data-sly-use.model="com.adobe.aem.guides.wknd.core.models.CustomCoreComponentModel"
+     data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-test.content="${model.text && model.moreText}"
+     data-sly-test="${content}"
+     data-cmp-data-layer="${model.data.json}">
+    <div id="${component.id}"
+         class="cmp-customcorecomponent">
+        <h2>Extended Core Compoment</h2>
+        <p class="cmp-customcorecomponent__paragraph"
+           data-sly-test="${model.text}"
+           data-sly-test.text="${model.text}"
+           data-sly-unwrap="${model.isRichText}">${text @ context = model.isRichText ? 'html' : 'text'}</p>
+        <p data-sly-test="${model.moreText}">more text: ${model.moreText}</p>
+    </div>
+</sly>
+
+<sly data-sly-call="${templates.placeholder @ isEmpty = !content, classAppend='cmp-customcorecomponent'}"></sly>
