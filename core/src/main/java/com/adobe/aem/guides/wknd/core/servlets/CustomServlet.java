@@ -32,10 +32,10 @@ import static org.apache.commons.codec.CharEncoding.UTF_8;
 @ServiceVendor("Inetum")
 public class CustomServlet extends SlingSafeMethodsServlet {
 
-    private final Logger LOGGER = LoggerFactory.getLogger(getClass());
+    private final Logger logger = LoggerFactory.getLogger(getClass());
 
     @Reference
-    private CustomService customService;
+    protected CustomService customService;
 
     private static final String PARAM = "string";
 

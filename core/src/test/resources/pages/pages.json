@@ -1,0 +1,45 @@
+{
+  "project": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent"
+    },
+    "country": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent"
+      },
+      "language": {
+        "jcr:primaryType": "cq:Page",
+        "jcr:content": {
+          "jcr:primaryType": "cq:PageContent",
+          "jcr:title": "Homepage",
+          "jcr:language": "en"
+        },
+        "page": {
+          "jcr:primaryType": "cq:Page",
+          "jcr:content": {
+            "jcr:primaryType": "cq:PageContent",
+            "jcr:title": "Page",
+            "cq:template": "/conf/wknd/settings/wcm/templates/page-content",
+            "sling:resourceType": "we-retail/components/page",
+            "root": {
+              "jcr:primaryType": "nt:unstructured",
+              "layout": "responsiveGrid",
+              "sling:resourceType": "we-retail/components/container",
+              "container": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "we-retail/components/container",
+                "container": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "layout": "responsiveGrid",
+                  "sling:resourceType": "we-retail/components/container"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,9 +1,9 @@
-package com.adobe.aem.guides.wknd.core.models.impl;
+package com.adobe.aem.guides.wknd.core.models;
 
-import com.adobe.aem.guides.wknd.core.models.CustomCoreComponentModel;
 import com.adobe.cq.export.json.ComponentExporter;
 import com.adobe.cq.export.json.ExporterConstants;
 import com.adobe.cq.wcm.core.components.models.Text;
+import lombok.Getter;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
@@ -16,26 +16,26 @@ import org.apache.sling.models.annotations.via.ResourceSuperType;
 
 @Model(
         adaptables = SlingHttpServletRequest.class,
-        adapters = { CustomCoreComponentModel.class,ComponentExporter.class},
-        resourceType = CustomCoreComponentImpl.RESOURCE_TYPE,
+        adapters = {ComponentExporter.class},
+        resourceType = ExtendedCoreComponentModel.RESOURCE_TYPE,
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
 )
-@Exporter(name = ExporterConstants.SLING_MODEL_EXPORTER_NAME, extensions = ExporterConstants.SLING_MODEL_EXTENSION)
-public class CustomCoreComponentImpl implements CustomCoreComponentModel {
+@Exporter(
+        name = ExporterConstants.SLING_MODEL_EXPORTER_NAME,
+        extensions = ExporterConstants.SLING_MODEL_EXTENSION
+)
+public class ExtendedCoreComponentModel implements Text {
 
-    static final String RESOURCE_TYPE = "wknd/components/customcorecomponent";
+    static final String RESOURCE_TYPE = "wknd/components/extendedcorecomponent";
 
     @Self
     @Via(type = ResourceSuperType.class)
-    private Text text;
+    protected Text text;
 
+    @Getter
     @ValueMapValue
-    @Default(values="Hello World.")
+    @Default(values = "Hello World.")
     private String moreText;
-
-    public String getMoreText() {
-        return moreText;
-    };
 
     @Override
     public String getText() {
@@ -45,10 +45,5 @@ public class CustomCoreComponentImpl implements CustomCoreComponentModel {
     @Override
     public boolean isRichText() {
         return text.isRichText();
-    }
-
-    @Override
-    public String getExportedType() {
-        return CustomCoreComponentImpl.RESOURCE_TYPE;
     }
 }

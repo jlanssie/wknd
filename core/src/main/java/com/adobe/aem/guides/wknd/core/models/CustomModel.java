@@ -1,6 +1,7 @@
 package com.adobe.aem.guides.wknd.core.models;
 
 import com.adobe.aem.guides.wknd.core.services.CustomService;
+import lombok.Getter;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
@@ -17,11 +18,13 @@ import java.util.Optional;
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
 )
 public class CustomModel {
-    private final Logger LOGGER = LoggerFactory.getLogger(getClass());
+    private final Logger logger = LoggerFactory.getLogger(getClass());
 
+    @Getter
     @ValueMapValue
     private String title;
 
+    @Getter
     @ValueMapValue
     private String text;
 
@@ -36,19 +39,11 @@ public class CustomModel {
         if (customService != null) {
             customStringFromService = customService.getCustomString();
             anotherCustomStringFromService = customService.getAnotherCustomString();
-            LOGGER.info("Custom Service available.");
+            logger.info("Custom Service available.");
         } else {
             customStringFromService = "Custom Service is not available.";
-            LOGGER.info("Custom Service is not available.");
+            logger.info("Custom Service is not available.");
         }
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getText() {
-        return text;
     }
 
     public String getCustomStringFromService() {
