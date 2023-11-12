@@ -15,14 +15,13 @@
  */
 package com.adobe.aem.guides.wknd.core.testcontext;
 
-import static com.adobe.cq.wcm.core.components.testing.mock.ContextPlugins.CORE_COMPONENTS;
-import static org.apache.sling.testing.mock.caconfig.ContextPlugins.CACONFIG;
-
-import org.apache.sling.testing.mock.sling.ResourceResolverType;
-
 import io.wcm.testing.mock.aem.junit5.AemContext;
 import io.wcm.testing.mock.aem.junit5.AemContextBuilder;
 import io.wcm.testing.mock.aem.junit5.AemContextCallback;
+import org.apache.sling.testing.mock.sling.ResourceResolverType;
+
+import static com.adobe.cq.wcm.core.components.testing.mock.ContextPlugins.CORE_COMPONENTS;
+import static org.apache.sling.testing.mock.caconfig.ContextPlugins.CACONFIG;
 
 /**
  * Sets up {@link AemContext} for unit tests in this application.
