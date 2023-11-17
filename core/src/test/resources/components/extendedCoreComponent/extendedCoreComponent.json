@@ -1,0 +1,8 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "moreText": "moreText",
+  "id": "id",
+  "text": "<p>text</p>",
+  "sling:resourceType": "wknd/components/extendedcorecomponent",
+  "textIsRich": "true"
+}
