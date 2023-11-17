@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "text": "text",
+  "title": "title",
+  "sling:resourceType": "wknd/components/custom-component"
+}
