@@ -17,7 +17,7 @@
     <!-- ====================================================================== -->
     <artifactId>wknd.ui.apps.structure</artifactId>
     <packaging>content-package</packaging>
-    <name>Inetum WKND Sites Project - Repository Structure Package</name>
+    <name>WKND Sites Project - Repository Structure Package</name>
     <description>
         Empty package that defines the structure of the Adobe Experience Manager repository the Code packages in this project deploy into.
         Any roots in the Code packages of this project should have their parent enumerated in the Filters list below.

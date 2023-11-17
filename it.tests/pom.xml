@@ -25,8 +25,8 @@
     </parent>
 
     <artifactId>wknd.it.tests</artifactId>
-    <name>Inetum WKND Sites Project - Integration Tests</name>
-    <description>Integration Tests for Inetum WKND Sites Project</description>
+    <name>WKND Sites Project - Integration Tests</name>
+    <description>Integration Tests for WKND Sites Project</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -24,8 +24,8 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>wknd.core</artifactId>
-    <name>Inetum WKND Sites Project - Core</name>
-    <description>Core bundle for Inetum WKND Sites Project</description>
+    <name>WKND Sites Project - Core</name>
+    <description>Core bundle for WKND Sites Project</description>
     <build>
         <plugins>
             <plugin>

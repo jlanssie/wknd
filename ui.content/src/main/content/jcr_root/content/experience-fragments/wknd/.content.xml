@@ -4,7 +4,7 @@
     cq:allowedTemplates="[/conf/wknd/settings/wcm/templates/(?!page-).*]"
     cq:conf="/conf/wknd"
     jcr:primaryType="sling:OrderedFolder"
-    jcr:title="Inetum WKND Sites Project Fragments"
+    jcr:title="WKND Sites Project Fragments"
     sling:configRef="/conf/wknd">
     <us/>
 </jcr:root>

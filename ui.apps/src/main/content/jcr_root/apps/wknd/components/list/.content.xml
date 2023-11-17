@@ -4,4 +4,4 @@
     jcr:title="List"
     sling:resourceSuperType="core/wcm/components/list/v3/list"
     teaserDelegate="wknd/components/teaser"
-    componentGroup="Inetum WKND Sites Project - Content"/>
+    componentGroup="WKND Sites Project - Content"/>

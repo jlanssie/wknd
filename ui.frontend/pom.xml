@@ -33,7 +33,7 @@
     <!-- ====================================================================== -->
     <artifactId>wknd.ui.frontend</artifactId>
     <packaging>pom</packaging>
-    <name>Inetum WKND Sites Project - UI Frontend</name>
+    <name>WKND Sites Project - UI Frontend</name>
 
 
     <!-- ====================================================================== -->

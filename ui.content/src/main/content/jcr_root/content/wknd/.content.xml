@@ -7,7 +7,7 @@
         cq:redirectTarget="/content/wknd/us/en"
         cq:template="/conf/wknd/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Inetum WKND Sites Project"
+        jcr:title="WKND Sites Project"
         sling:configRef="/conf/wknd"
         sling:redirect="{Boolean}true"
         sling:redirectStatus="{Long}302"

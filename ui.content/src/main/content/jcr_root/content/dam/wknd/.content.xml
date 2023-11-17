@@ -4,7 +4,7 @@
     <jcr:content
         cq:conf="/conf/wknd"
         jcr:primaryType="nt:unstructured"
-        jcr:title="Inetum WKND Sites Project">
+        jcr:title="WKND Sites Project">
         <folderThumbnail/>
     </jcr:content>
     <asset.jpg/>
