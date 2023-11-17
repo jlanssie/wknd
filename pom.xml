@@ -23,11 +23,11 @@
       
   <packaging>pom</packaging>
       
-  <version>0.1.0-RELEASE</version>
+  <version>0.1.1-RELEASE</version>
       
-  <name>Inetum WKND Sites Project</name>
+  <name>WKND Sites Project</name>
       
-  <description>Inetum WKND Sites Project</description>
+  <description>WKND Sites Project</description>
       
   <modules>
             
@@ -85,7 +85,7 @@
             
     <aemanalyser.version>1.4.10</aemanalyser.version>
             
-    <componentGroupName>Inetum WKND Sites Project</componentGroupName>
+    <componentGroupName>WKND Sites Project</componentGroupName>
         
   </properties>
       
