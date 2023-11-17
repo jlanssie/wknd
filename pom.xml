@@ -80,8 +80,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
             
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-            
-    <aem.sdk.api>2023.9.13665.20230927T063259Z-230800</aem.sdk.api>
+
+    <aem.sdk.api>2023.1.10912.20230130T173736Z-230100</aem.sdk.api>
             
     <aemanalyser.version>1.4.10</aemanalyser.version>
             
