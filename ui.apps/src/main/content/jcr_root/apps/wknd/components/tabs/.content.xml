@@ -4,4 +4,4 @@
     jcr:primaryType="cq:Component"
     jcr:title="Tabs"
     sling:resourceSuperType="core/wcm/components/tabs/v1/tabs"
-    componentGroup="Inetum WKND Sites Project - Content"/>
+    componentGroup="WKND Sites Project - Content"/>

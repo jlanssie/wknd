@@ -4,4 +4,4 @@
     jcr:primaryType="cq:Component"
     jcr:title="Carousel"
     sling:resourceSuperType="core/wcm/components/carousel/v1/carousel"
-    componentGroup="Inetum WKND Sites Project - Content"/>
+    componentGroup="WKND Sites Project - Content"/>

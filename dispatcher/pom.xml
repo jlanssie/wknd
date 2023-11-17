@@ -9,14 +9,14 @@
     <parent>
         <groupId>com.adobe.aem.guides</groupId>
         <artifactId>wknd</artifactId>
-        <version>0.1.0-RELEASE</version>
+        <version>0.1.1-RELEASE</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>wknd.dispatcher.cloud</artifactId>
     <packaging>pom</packaging>
-    <name>Inetum WKND Sites Project - Dispatcher</name>
-    <description>HTTP &amp; Dispatcher configurations for Inetum WKND Sites Project</description>
+    <name>WKND Sites Project - Dispatcher</name>
+    <description>HTTP &amp; Dispatcher configurations for WKND Sites Project</description>
 
     <build>
         <plugins>
