@@ -6,6 +6,7 @@ const TSConfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
+const { VueLoaderPlugin } = require("vue-loader");
 
 const SOURCE_ROOT = __dirname + '/src/main/webpack';
 
@@ -29,6 +30,14 @@ module.exports = {
     },
     module: {
         rules: [
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader'
+            },
+            {
+                test: /\.vue\.(s?[ac]ss)$/,
+                use: ['vue-style-loader', 'css-loader', 'sass-loader']
+            },
             {
                 test: /\.tsx?$/,
                 exclude: /node_modules/,
@@ -79,6 +88,7 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(),
+        new VueLoaderPlugin(),
         new ESLintPlugin({
             extensions: ['js', 'ts', 'tsx']
         }),
