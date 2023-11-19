@@ -6,6 +6,7 @@ const TSConfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
+const SveltePreprocess = require('svelte-preprocess');
 
 const SOURCE_ROOT = __dirname + '/src/main/webpack';
 
@@ -29,6 +30,18 @@ module.exports = {
     },
     module: {
         rules: [
+            {
+                test: /\.svelte$/,
+                exclude: /node_modules/,
+                use: [
+                    {
+                        loader: 'svelte-loader',
+                        options: {
+                            preprocess: SveltePreprocess(),
+                        },
+                    }
+                ]
+            },
             {
                 test: /\.tsx?$/,
                 exclude: /node_modules/,
