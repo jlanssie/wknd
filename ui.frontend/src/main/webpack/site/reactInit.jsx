@@ -1,9 +1,9 @@
-import React from "react";
+import React, {Suspense} from "react";
 import {createRoot} from 'react-dom';
-import {DemoReact} from "../components/Demo.jsx";
+import {Demo} from "../components/Demo";
 
 const COMPONENTS = {
-    "demo": DemoReact
+    "demo": Demo
 }
 
 class ReactComponent extends HTMLElement {
@@ -17,7 +17,9 @@ class ReactComponent extends HTMLElement {
 
         if (Component !== undefined) {
             createRoot(this).render(
-                <Component {...props} />
+                <Suspense fallback={null}>
+                    <Component {...props} />
+                </Suspense>
             );
         }
     }

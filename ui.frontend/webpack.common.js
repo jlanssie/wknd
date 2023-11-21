@@ -22,10 +22,10 @@ module.exports = {
         site: SOURCE_ROOT + '/site/main.ts'
     },
     output: {
-        filename: (chunkData) => {
-            return chunkData.chunk.name === 'dependencies' ? 'clientlib-dependencies/[name].js' : 'clientlib-site/[name].js';
-        },
-        path: path.resolve(__dirname, 'dist')
+        filename: 'clientlib-[name]/index.js',
+        chunkFilename: 'clientlib-chunks/resources/chunks/[name].[chunkhash].chunk.js',
+        publicPath: `/etc.clientlibs/wknd/clientlibs/`,
+        path: path.join(process.cwd(), './dist')
     },
     module: {
         rules: [

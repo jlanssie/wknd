@@ -44,6 +44,20 @@ module.exports = {
   libs: [
     {
       ...libsBaseConfig,
+      name: 'clientlib-chunks',
+      categories: ['wknd.chunks'],
+      dependencies: [],
+      assets: {
+        resources: {
+          base: '.',
+          cwd: 'clientlib-chunks',
+          files: ['resources/**'],
+          flatten: false
+        },
+      },
+    },
+    {
+      ...libsBaseConfig,
       name: 'clientlib-dependencies',
       categories: ['wknd.dependencies'],
       assets: {
