@@ -1,9 +1,10 @@
-import React, {Suspense} from "react";
+import React, { lazy, Suspense } from "react";
 import {createRoot} from 'react-dom';
-import {Demo} from "../components/Demo";
 
 const COMPONENTS = {
-    "demo": Demo
+    "demo": lazy(() =>
+        import(/* webpackPrefetch: true, webpackChunkName: "demo" */ "../components/Demo.jsx")
+    ),
 }
 
 class ReactComponent extends HTMLElement {
